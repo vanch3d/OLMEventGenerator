@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="thirdparty/l2fprod-common-sheet.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/activemath"/>
+	<classpathentry kind="lib" path="/activemath/thirdParty/concurrent/concurrent.jar"/>
+	<classpathentry kind="lib" path="/activemath/thirdParty/log4j/log4j.jar"/>
+	<classpathentry kind="lib" path="/activemath/thirdParty/xmlrpc-java/xmlrpc-applet.jar"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

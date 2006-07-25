@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This is a sample file for .classpath. The file .classpath is mantained
+  automatically by Eclipse and changes everytime a new library, dependency on
+  other project, javadoc documentation, source folders, etc. is made. Some of
+  this changes (e.g. new library or source folder) should be shared, while
+  others (e.g. new location for javadoc documentation) should not, hence the
+  need of not sharing .classpath itself but a sample of it, for initial setup.
+--> 
+
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="thirdparty/l2fprod-common-sheet.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Activemath Eclipse"/>
+	<classpathentry kind="lib" path="/Activemath Eclipse/thirdParty/jdom/jdom.jar"/>
+	<classpathentry kind="lib" path="/Activemath Eclipse/thirdParty/xmlrpc-java/xmlrpc.jar"/>
+	<classpathentry kind="lib" path="/Activemath Eclipse/thirdParty/xmlrpc-java/xmlrpc-applet.jar"/>
+	<classpathentry kind="lib" path="/Activemath Eclipse/thirdParty/log4j/log4j.jar"/>
+	<classpathentry kind="lib" path="/Activemath Eclipse/thirdParty/concurrent/concurrent.jar"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

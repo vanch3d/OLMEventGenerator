@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<project name="FatJar XLMEventGenerator.jar (experimental)" default="main" basedir=".">
+    <!-- this file was created by Fat-Jar Eclipse Plug-in -->
+    <!-- the ANT-Export is in a very early stage, so this -->
+    <!-- is only experimental, ANT 1.6 or above is        -->
+    <!-- required, feedback is always welcome:            -->
+    <!--       http://sourceforge.net/projects/fjep       -->
+    <!-- uncomment the following lines if using ANT outside Eclipse -->
+    <!--
+        <property name="fjepPath" value="c:/eclipse/plugins/net.sf.fjep.fatjar_0.0.18/fatjar.jar"/>
+        <taskdef name="fatjar.build" classname="net.sf.fjep.anttask.FJBuildTask" classpath="${fjepPath}"/>
+        <typedef name="fatjar.manifest" classname="net.sf.fjep.anttask.FJManifestType" classpath="${fjepPath}"/>
+        <typedef name="fatjar.exclude" classname="net.sf.fjep.anttask.FJExcludeType" classpath="${fjepPath}"/>
+        <typedef name="fatjar.jarsource" classname="net.sf.fjep.anttask.FJJarSourceType" classpath="${fjepPath}"/>
+        <typedef name="fatjar.filesource" classname="net.sf.fjep.anttask.FJFileSourceType" classpath="${fjepPath}"/>
+    -->
+    <!-- uncomment the above lines to use ANT outside of Eclipse -->
+    <target name="main">
+        <fatjar.build output="XLMEventGenerator.jar">
+            <fatjar.manifest/>
+            <fatjar.filesource path="F:\java\evtgen\class" relpath="">
+                <fatjar.exclude relpath="support/"/>
+            </fatjar.filesource>
+            <fatjar.filesource path="F:\activemath\classes" relpath="">
+                <fatjar.exclude relpath="org/activemath/abstractcontent/"/>
+                <fatjar.exclude relpath="org/activemath/applets/"/>
+                <fatjar.exclude relpath="org/activemath/author/"/>
+                <fatjar.exclude relpath="org/activemath/config/"/>
+                <fatjar.exclude relpath="org/activemath/content/mediator/"/>
+                <fatjar.exclude relpath="org/activemath/content/query/"/>
+                <fatjar.exclude relpath="org/activemath/content/Book$BookTitleComperator.class"/>
+                <fatjar.exclude relpath="org/activemath/content/Book.class"/>
+                <fatjar.exclude relpath="org/activemath/content/BookPlanner.class"/>
+                <fatjar.exclude relpath="org/activemath/content/ContentFactory.class"/>
+                <fatjar.exclude relpath="org/activemath/content/ContentManager.class"/>
+                <fatjar.exclude relpath="org/activemath/content/COPYRIGHT"/>
+                <fatjar.exclude relpath="org/activemath/content/Grouping.class"/>
+                <fatjar.exclude relpath="org/activemath/content/ItemCache.class"/>
+                <fatjar.exclude relpath="org/activemath/content/Page.class"/>
+                <fatjar.exclude relpath="org/activemath/content/RecBook.class"/>
+                <fatjar.exclude relpath="org/activemath/content/Toc.class"/>
+                <fatjar.exclude relpath="org/activemath/content/TocEntry.class"/>
+                <fatjar.exclude relpath="org/activemath/content/UserBook.class"/>
+                <fatjar.exclude relpath="org/activemath/courseGenerator/"/>
+                <fatjar.exclude relpath="org/activemath/drafts/"/>
+                <fatjar.exclude relpath="org/activemath/events/ActivemathEventListener.class"/>
+                <fatjar.exclude relpath="org/activemath/events/ActivemathEventMulticaster.class"/>
+                <fatjar.exclude relpath="org/activemath/events/ActivemathEventPublisher.class"/>
+                <fatjar.exclude relpath="org/activemath/events/ActivemathEventSubscriptionService.class"/>
+                <fatjar.exclude relpath="org/activemath/exercises/"/>
+                <fatjar.exclude relpath="org/activemath/feedback/"/>
+                <fatjar.exclude relpath="org/activemath/fileBased/"/>
+                <fatjar.exclude relpath="org/activemath/omdocjdom/"/>
+                <fatjar.exclude relpath="org/activemath/pPlanner/"/>
+                <fatjar.exclude relpath="org/activemath/presentation/"/>
+                <fatjar.exclude relpath="org/activemath/proxies/"/>
+                <fatjar.exclude relpath="org/activemath/security/"/>
+                <fatjar.exclude relpath="org/activemath/sessionManager/"/>
+                <fatjar.exclude relpath="org/activemath/studentmodel/"/>
+                <fatjar.exclude relpath="org/activemath/tutor/"/>
+                <fatjar.exclude relpath="org/activemath/util/"/>
+                <fatjar.exclude relpath="org/activemath/webapp/"/>
+                <fatjar.exclude relpath="org/activemath/xlm/"/>
+                <fatjar.exclude relpath="org/activemath/xsl/"/>
+                <fatjar.exclude relpath="org/activemath/COPYRIGHT"/>
+                <fatjar.exclude relpath="org/activemathx/"/>
+                <fatjar.exclude relpath="StartActiveMath$1.class"/>
+                <fatjar.exclude relpath="StartActiveMath.class"/>
+            </fatjar.filesource>
+            <fatjar.jarsource file="F:\java\evtgen\thirdparty\l2fprod-common-sheet.jar" relpath=""/>
+            <fatjar.jarsource file="F:\activemath\thirdParty\xmlrpc-java\xmlrpc.jar" relpath=""/>
+            <fatjar.jarsource file="F:\activemath\thirdParty\xmlrpc-java\xmlrpc-applet.jar" relpath=""/>
+        </fatjar.build>
+    </target>
+</project>
